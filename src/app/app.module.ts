@@ -12,6 +12,7 @@ import { HomeComponent } from './component/home/home.component';
 import { TitleService } from './service/title.service';
 import { LoginComponent } from './component/login/login.component';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
+import { FooterComponent } from './shared/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { SubscribeComponent } from './component/subscribe/subscribe.component';
     StartComponent,
     HomeComponent,
     LoginComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

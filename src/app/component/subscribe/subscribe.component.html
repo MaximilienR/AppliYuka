@@ -1,7 +1,7 @@
 <div class="container m-6 p-4 d-flex flex-row justify-content-center">
   <form action="" [formGroup]="condition" (ngSubmit)="check()">
     <h1>{{titre}}</h1>
-    <div class="card-body">
+    <div class="mb-3">
       <label for="mail">Mail</label>
       <input type="text" formControlName="mail" />
       <div *ngIf="mail.invalid && mail.touched" class="text-danger">
