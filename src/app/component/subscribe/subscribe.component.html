@@ -1,0 +1,22 @@
+<div class="container m-6 p-4 d-flex flex-row justify-content-center">
+  <form action="" [formGroup]="condition" (ngSubmit)="check()">
+    <div class="card-body">
+      <label for="mail">Mail</label>
+      <input type="text" />
+      <div *ngif="mail.invalid && mail.touched" class="text-danger">
+        <div *ngIf="mail.errors">
+          <small>Ce champs est obligatoire</small>
+        </div>
+
+      </div>
+      <label for="password">Mot de passe</label>
+      <input type="password" />
+    </div>
+    <button type="button" class="btn btn-primary">
+      <a [routerLink]="['/']">Retour</a>
+    </button>
+    <button type="button" class="btn btn-primary" [disabled]="!condition.valid">
+      <a [routerLink]="['']">Validation</a>
+    </button>
+  </form>
+</div>

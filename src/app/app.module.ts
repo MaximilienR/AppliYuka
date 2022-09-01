@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,17 +10,24 @@ import { ErrorComponent } from './component/error/error.component';
 import { StartComponent } from './component/start/start.component';
 import { HomeComponent } from './component/home/home.component';
 import { TitleService } from './service/title.service';
+import { LoginComponent } from './component/login/login.component';
+import { SubscribeComponent } from './component/subscribe/subscribe.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+
     ErrorComponent,
     StartComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [TitleService],
   bootstrap: [AppComponent]

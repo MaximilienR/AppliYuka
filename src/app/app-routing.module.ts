@@ -3,10 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './component/error/error.component';
 import { StartComponent } from './component/start/start.component';
 import { HomeComponent } from './component/home/home.component';
+import { SubscribeComponent } from './component/subscribe/subscribe.component';
+
 const routes: Routes = [
   {path:'',component:StartComponent},
   {path:'home',component:HomeComponent},
-  {path:'**',component:ErrorComponent}
+  {path:'subscribe',component:SubscribeComponent},
+  {path:'**',component:ErrorComponent},
+
 ];
 
 @NgModule({
