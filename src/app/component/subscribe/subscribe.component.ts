@@ -10,8 +10,9 @@ export class SubscribeComponent implements OnInit {
 
   condition!:FormGroup;
   user!:User;
-  constructor(private fb:FormBuilder) { }
+  titre:string='Inscription'
 
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
     this.condition=this.fb.group({
@@ -30,6 +31,7 @@ export class SubscribeComponent implements OnInit {
   check(){
     if(this.condition.valid){
       this.user=this.condition.value;
+      console.log('good job')
      // this.user.mail=this.condition.get('mail')?.value
     }
   }
