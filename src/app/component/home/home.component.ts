@@ -6,8 +6,10 @@ import { TitleService } from 'src/app/service/title.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  titlee:string="Accueil";
 
-  constructor() { }
+
+  constructor(private titleserve:TitleService) { }
 
   ngOnInit(): void {
   }
