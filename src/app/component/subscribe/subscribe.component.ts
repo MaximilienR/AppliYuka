@@ -32,7 +32,7 @@ export class SubscribeComponent implements OnInit {
     if(this.condition.valid){
       this.user=this.condition.value;
       console.log('good job')
-     // this.user.mail=this.condition.get('mail')?.value
+      this.user.mail=this.condition.get('mail')?.value
     }
   }
 
