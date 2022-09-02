@@ -2,20 +2,25 @@
   <form action="" [formGroup]="condition" (ngSubmit)="check()">
     <h1>{{titre}}</h1>
     <div class="mb-3">
+
       <label for="mail">Mail</label>
       <input type="text" formControlName="mail" />
       <div *ngIf="mail.invalid && mail.touched" class="text-danger">
         <div *ngIf="mail.errors?.['required']">
           <small>Ce champs est obligatoire</small>
         </div>
-
       </div>
       <label for="password">Mot de passe</label>
-      <input type="password" formControlName="password" />
-      <div *ngif="password.invalid && password.touched" class="text-danger">
+      <input type="password" formControlName="mail" />
 
+      <div *ngIf="password.invalid && password.touched" class="text-danger">
+        <div *ngIf="mail.errors?.['required']">
+          <small>Ce champs est obligatoire</small>
+        </div>
+        
       </div>
     </div>
+
     <div class="BtnS">
     <button type="button ">
       <a [routerLink]="['/home']">Retour</a>
