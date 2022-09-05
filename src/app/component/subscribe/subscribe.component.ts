@@ -29,11 +29,13 @@ export class SubscribeComponent implements OnInit {
     return this.condition.get('password')
   }
   check(){
+    alert('inscription reussi')
     if(this.condition.valid){
       this.user=this.condition.value;
       console.log('good job')
       this.user.mail=this.condition.get('mail')?.value
     }
   }
+
 
 }

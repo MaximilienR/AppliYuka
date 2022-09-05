@@ -13,6 +13,7 @@ import { TitleService } from './service/title.service';
 import { LoginComponent } from './component/login/login.component';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ScanneComponent } from './component/scanne/scanne.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomeComponent,
     LoginComponent,
     SubscribeComponent,
-    FooterComponent
+    FooterComponent,
+    ScanneComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div class="container d-flex flex-column justify-content-around p-4">
+  <form action="" [formGroup]="condition">
+    <h1>Saisie manuel</h1>
+    <input type="text" placeholder="EAN à saisir" formControlName="product" />
+    <button class="btn btn-primary" [disabled]="!condition.valid">
+      Validation
+    </button>
+    <button class="btn btn-primary">Deconexion</button>
+    <div *ngIf="product.invalid && product.touched" class="text-danger">
+      <div *ngIf="product.errors?.['required']">
+        <small>Ce champs est obligatoire</small>
+      </div>
+    </div>
+  </form>
+</div>

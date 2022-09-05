@@ -1,14 +1,15 @@
 #ImgStart
-{width: 50%;
-height: 50%;
-margin-left: 20%;
-margin-top: 5%;}
+{width: 40%;
+height: 40%;
+margin-left: 30%;
+margin-top: 5%;
+padding-bottom: 0%;}
 p{text-align: center;
 color: rgb(41, 146, 41);
 font-size: large;}
 
 #btnStart{
   background-color: rgb(41, 146, 41);
-  width: 50%;
-  margin-left: 20%;
+  width: 40%;
+  margin-left: 30%;
 }
