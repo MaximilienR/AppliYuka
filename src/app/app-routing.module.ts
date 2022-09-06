@@ -6,12 +6,13 @@ import { HomeComponent } from './component/home/home.component';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
 import { LoginComponent } from './component/login/login.component';
  import { ScanneComponent } from './component/scanne/scanne.component';
+ import { AuthService as AuthGuard } from './service/auth.service';
 const routes: Routes = [
   {path:'',component:StartComponent},
   {path:'home',component:HomeComponent},
   {path:'subscribe',component:SubscribeComponent},
   {path:'login',component:LoginComponent},
-  {path:'scan',component:ScanneComponent},
+  {path:'scan',component:ScanneComponent,canActivate:[AuthGuard]},
    {path:'**',component:ErrorComponent},
 
 ];
