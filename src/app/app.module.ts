@@ -14,6 +14,7 @@ import { LoginComponent } from './component/login/login.component';
 import { SubscribeComponent } from './component/subscribe/subscribe.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ScanneComponent } from './component/scanne/scanne.component';
+import { ProductComponent } from './component/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ScanneComponent } from './component/scanne/scanne.component';
     LoginComponent,
     SubscribeComponent,
     FooterComponent,
-    ScanneComponent
+    ScanneComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
